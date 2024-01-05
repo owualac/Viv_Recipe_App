@@ -8,7 +8,7 @@ import { Recipe } from './types'
 const App = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
 
   const handleSearchSubmit = async (event: FormEvent) => {
     event.preventDefault();

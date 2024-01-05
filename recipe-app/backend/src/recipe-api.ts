@@ -1,5 +1,5 @@
-
 const API_KEY = process.env.API_KEY;
+
 
 export const searchRecipes = async (searchTerm: string, page: number) => {
     if (!API_KEY) {
